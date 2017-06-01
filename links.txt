@@ -12,3 +12,8 @@ FreeNAS
 The World’s #1 Storage OS with over 9+ Million Downloads
 Enterprise-Grade Features, Open Source, BSD Licensed
 http://www.freenas.org/
+
+TrueNAS
+by iXsystems
+TrueNAS: Hybrid or All-Flash Storage Arrays With High Availability and 24x7 Support
+http://www.freenas.org/for-business/
