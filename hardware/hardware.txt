@@ -4,3 +4,23 @@ Copyright (C) 2017 by Raymond E. Marcil <marcilr@gmail.com>
 
 
 Hardware
+
+
+ram - ECC RAM
+  The general rule of thumb here is to have 5 GB of memory for every 1TB of deduplicated data.
+  That said, there may be instances where more is required, but you will need to plan to meet
+  the maximum potential memory requirements to avoid problems down the road.  To get a more
+  precise estimate of the required memory for deduplication do the following: run the 
+  'zdb -b (pool name); command for the desired pool to get an idea of the number of blocks
+  required, then multiply the 'bp count' by 320 bytes to get your required memory. If it's
+  less than 5GB, still use the 5GB per terabyte of storage rule. If it's higher, go with that
+  number per terabyte.  
+  --www.freenas.org/blog/freenas-worst-practices/
+
+
+
+Links
+=====
+FreeNAS: A Worst Practices Guide
+Sep 30, 2015 | FreeNAS | 7 comments
+http://www.freenas.org/blog/freenas-worst-practices/
