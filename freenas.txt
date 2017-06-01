@@ -6,10 +6,19 @@ Copyright (C) 2017 by Raymond E. Marcil <marcilr@gmail.com>
 FreeNAS
 
 
+What is FreeNAS?
+================
+FreeNAS is an operating system that can be installed on virtually any
+hardware platform to share data over a network.  FreeNAS is the simplest
+way to create a centralized and easily accessible place for your data.
+Use FreeNAS with ZFS to protect, store, backup, all of your data.  FreeNAS
+is used everywhere, for the home, small business, and the enterprise.
+--freenas.org
+
+
 Links
 =====
 FreeNAS
 The World’s #1 Storage OS with over 9+ Million Downloads
 Enterprise-Grade Features, Open Source, BSD Licensed
 http://www.freenas.org/
-
