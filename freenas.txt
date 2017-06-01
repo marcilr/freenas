@@ -1,0 +1,15 @@
+freenas.txt
+Created Thu Jun  1 13:35:12 AKDT 2017
+Copyright (C) 2017 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+FreeNAS
+
+
+Links
+=====
+FreeNAS
+The World’s #1 Storage OS with over 9+ Million Downloads
+Enterprise-Grade Features, Open Source, BSD Licensed
+http://www.freenas.org/
+
