@@ -1,0 +1,6 @@
+hardware.txt
+Created Thu Jun  1 15:49:12 AKDT 2017
+Copyright (C) 2017 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Hardware
