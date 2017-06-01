@@ -61,3 +61,9 @@ One of the most popular SAS 6.0gbps/ SATA III controllers for enthusiasts is
 the IBM M1015.  In its native form, it is a very capable host bus adapter (HBA)
 based on the LSI SAS2008 chip. 
 https://www.servethehome.com/ibm-serveraid-m1015-part-4/
+
+ServeRAID M1015 SAS/SATA Controller for System x
+Product Guide
+This is the first article I read with reference to
+the ServeRAID M1015 SAS/SATA Controller.  Very good details here.
+https://lenovopress.com/tips0740-serveraid-m1015
