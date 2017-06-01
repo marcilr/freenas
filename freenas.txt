@@ -21,4 +21,8 @@ Links
 FreeNAS
 The World’s #1 Storage OS with over 9+ Million Downloads
 Enterprise-Grade Features, Open Source, BSD Licensed
+o Web Interface
+o File Sharing
+o Snapshots
+o Replication
 http://www.freenas.org/
