@@ -5,6 +5,11 @@ Copyright (C) 2017 by Raymond E. Marcil <marcilr@gmail.com>
 
 Filelist
 ========
+controller.txt
+  Storage Controllers
+  LSI is the best game in town for add-on storage controllers.
+  --www.freenas.org/blog/a-complete-guide-to-freenas-hardware-design-part-ii-hardware-specifics/
+
 hardware.txt
   Hardware
 
