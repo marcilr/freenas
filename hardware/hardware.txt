@@ -22,8 +22,12 @@ ram - ECC RAM
   --www.freenas.org/blog/freenas-worst-practices/
 
 controller - LSI is the best game in town for add-on storage controllers.
+  LSI 12Gbps parts such as the 9300.  The newer 12Gbps parts use version 5 of the LSI driver.
+  Cards using this driver should use version 5 of the firmware.
   --www.freenas.org/blog/a-complete-guide-to-freenas-hardware-design-part-ii-hardware-specifics/
 
+nic - Intel NICs are the best game in town for Gigabit networking with FreeNAS.
+  http://www.freenas.org/blog/a-complete-guide-to-freenas-hardware-design-part-iv-network-notes-conclusion/
 
 
 Links
@@ -31,6 +35,10 @@ Links
 A Complete Guide to FreeNAS Hardware Design, Part II: Hardware Specifics
 Feb 5, 2015 | FreeNAS | 17 comments
 http://www.freenas.org/blog/a-complete-guide-to-freenas-hardware-design-part-ii-hardware-specifics/
+
+A Complete Guide to FreeNAS Hardware Design, Part IV: Network Notes & Conclusion
+Feb 12, 2015 | FreeNAS | 3 comments
+http://www.freenas.org/blog/a-complete-guide-to-freenas-hardware-design-part-iv-network-notes-conclusion/
 
 FreeNAS: A Worst Practices Guide
 Sep 30, 2015 | FreeNAS | 7 comments
