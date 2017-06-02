@@ -6,6 +6,10 @@ Copyright (C) 2017 by Raymond E. Marcil <marcilr@gmail.com>
 Hardware
 
 
+cpu - Intel
+  FreeNAS is based on FreeBSD. FreeBSD has a long history of working better on Intel than AMD. 
+  --www.freenas.org/blog/a-complete-guide-to-freenas-hardware-design-part-ii-hardware-specifics/
+
 ram - ECC RAM
   The general rule of thumb here is to have 5 GB of memory for every 1TB of deduplicated data.
   That said, there may be instances where more is required, but you will need to plan to meet
@@ -17,10 +21,17 @@ ram - ECC RAM
   number per terabyte.  
   --www.freenas.org/blog/freenas-worst-practices/
 
+controller - LSI is the best game in town for add-on storage controllers.
+  --www.freenas.org/blog/a-complete-guide-to-freenas-hardware-design-part-ii-hardware-specifics/
+
 
 
 Links
 =====
+A Complete Guide to FreeNAS Hardware Design, Part II: Hardware Specifics
+Feb 5, 2015 | FreeNAS | 17 comments
+http://www.freenas.org/blog/a-complete-guide-to-freenas-hardware-design-part-ii-hardware-specifics/
+
 FreeNAS: A Worst Practices Guide
 Sep 30, 2015 | FreeNAS | 7 comments
 http://www.freenas.org/blog/freenas-worst-practices/
