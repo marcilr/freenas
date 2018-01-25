@@ -7,38 +7,47 @@ Hardware
 
 
 cpu - Intel
-  FreeNAS is based on FreeBSD. FreeBSD has a long history of working better on Intel than AMD. 
+  FreeNAS is based on FreeBSD.  FreeBSD has a long history of
+  working better on Intel than AMD. 
   --www.freenas.org/blog/a-complete-guide-to-freenas-hardware-design-part-ii-hardware-specifics/
 
 ram - ECC RAM
-  The general rule of thumb here is to have 5 GB of memory for every 1TB of deduplicated data.
-  That said, there may be instances where more is required, but you will need to plan to meet
-  the maximum potential memory requirements to avoid problems down the road.  To get a more
-  precise estimate of the required memory for deduplication do the following: run the 
-  'zdb -b (pool name); command for the desired pool to get an idea of the number of blocks
-  required, then multiply the 'bp count' by 320 bytes to get your required memory. If it's
-  less than 5GB, still use the 5GB per terabyte of storage rule. If it's higher, go with that
-  number per terabyte.  
+  The general rule of thumb here is to have 5 GB of memory
+  for every 1TB of deduplicated data.  That said, there may
+  be instances where more is required, but you will need to
+  plan to meet the maximum potential memory requirements to
+  avoid problems down the road.  To get a more precise
+  estimate of the required memory for deduplication do the
+  following: run the 'zdb -b (pool name); command for the
+  desired pool to get an idea of the number of blocks
+  required, then multiply the 'bp count' by 320 bytes to
+  get your required memory. If it's less than 5GB, still
+  use the 5GB per terabyte of storage rule. If it's higher,
+  go with that number per terabyte.  
   --www.freenas.org/blog/freenas-worst-practices/
 
-controller - LSI is the best game in town for add-on storage controllers.
-  LSI 12Gbps parts such as the 9300.  The newer 12Gbps parts use version 5 of the LSI driver.
+controller - LSI is the best game in town for add-on
+  storage controllers. LSI 12Gbps parts such as the 9300.
+  The newer 12Gbps parts use version 5 of the LSI driver.
   Cards using this driver should use version 5 of the firmware.
   --www.freenas.org/blog/a-complete-guide-to-freenas-hardware-design-part-ii-hardware-specifics/
 
-nic - gigE Intel NICs are the best game in town for Gigabit networking with FreeNAS.
-  In the Ten Gigabit arena, Chelsio NICs are hands down the best choice for FreeNAS.
+nic - gigE Intel NICs are the best game in town for Gigabit
+  networking with FreeNAS.  In the Ten Gigabit arena,
+  Chelsio NICs are hands down the best choice for FreeNAS.
   http://www.freenas.org/blog/a-complete-guide-to-freenas-hardware-design-part-iv-network-notes-conclusion/
 
   
 
 Links
 =====
-A Complete Guide to FreeNAS Hardware Design, Part II: Hardware Specifics
+A Complete Guide to FreeNAS Hardware Design,
+Part II: Hardware Specifics
 Feb 5, 2015 | FreeNAS | 17 comments
 http://www.freenas.org/blog/a-complete-guide-to-freenas-hardware-design-part-ii-hardware-specifics/
 
-A Complete Guide to FreeNAS Hardware Design, Part IV: Network Notes & Conclusion
+A Complete Guide to FreeNAS Hardware Design,
+Part IV: Network Notes & Conclusion
 Feb 12, 2015 | FreeNAS | 3 comments
 http://www.freenas.org/blog/a-complete-guide-to-freenas-hardware-design-part-iv-network-notes-conclusion/
 
