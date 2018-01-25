@@ -11,10 +11,11 @@ processor: Xeon
 speed:     3.0Ghz or higher
 
 
-Supermicro's X10 motherboards are very popular in the FreeNAS community, and one offering,
-the X10SL7[1], includes an integrated LSI SAS controller, boosting storage connectivity
-from 6 to a whopping 14 ports! But this is a Micro-ATX board, meaning it needs a larger
-enclosure.
+Supermicro's X10 motherboards are very popular in the FreeNAS
+community, and one offering, the X10SL7[1], includes an
+integrated LSI SAS controller, boosting storage connectivity
+from 6 to a whopping 14 ports!  But this is a Micro-ATX board,
+meaning it needs a larger enclosure.
 NOTE: This board only supports up to 32GB ram.
 --blog.fosketts.net/
 
