@@ -8,19 +8,23 @@ Hardware related links
 
 Links
 =====
-A Complete Guide to FreeNAS Hardware Design, Part I: Purpose and Best Practices
+A Complete Guide to FreeNAS Hardware Design,
+Part I: Purpose and Best Practices
 Feb 3, 2015 | FreeNAS | 18 comments
 http://www.freenas.org/blog/a-complete-guide-to-freenas-hardware-design-part-i-purpose-and-best-practices/
 
-A Complete Guide to FreeNAS Hardware Design, Part II: Hardware Specifics
+A Complete Guide to FreeNAS Hardware Design,
+Part II: Hardware Specifics
 Feb 5, 2015 | FreeNAS | 17 comments
 http://www.freenas.org/blog/a-complete-guide-to-freenas-hardware-design-part-ii-hardware-specifics/
 
-A Complete Guide to FreeNAS Hardware Design, Part III: Pools, Performance, and Cache
+A Complete Guide to FreeNAS Hardware Design,
+Part III: Pools, Performance, and Cache
 Feb 10, 2015 | FreeNAS | 3 comments
 http://www.freenas.org/blog/a-complete-guide-to-freenas-hardware-design-part-iii-pools-performance-and-cache/
 
-A Complete Guide to FreeNAS Hardware Design, Part IV: Network Notes & Conclusion
+A Complete Guide to FreeNAS Hardware Design,
+Part IV: Network Notes & Conclusion
 Feb 12, 2015 | FreeNAS | 3 comments
 http://www.freenas.org/blog/a-complete-guide-to-freenas-hardware-design-part-iv-network-notes-conclusion/
 
@@ -62,7 +66,8 @@ the IBM M1015.  In its native form, it is a very capable host bus adapter (HBA)
 based on the LSI SAS2008 chip. 
 https://www.servethehome.com/ibm-serveraid-m1015-part-4/
 
-LSI Logic LSI00344 9300-8i SGL SAS 8Port 12Gb/s PCIE3.0 HBA Controller Card Brown Box OEM
+LSI Logic LSI00344 9300-8i SGL SAS 8Port 12Gb/s PCIE3.0
+HBA Controller Card Brown Box OEM
 price: $334.15
 o Eight ports of 12Gb/s SAS + SATA ports
 o Eight lanes of PCI Express 3.0
