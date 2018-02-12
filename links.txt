@@ -21,6 +21,15 @@ o Snapshots
 o Replication
 http://www.freenas.org/about/features/
 
+FreeNAS Forums
+https://forums.freenas.org/index.php
+
+FreeNAS
+Hardware Recommendations Guide Rev 1e) 2017-05-06
+Community hardware recommendations for FreeNAS servers,
+oriented towards new users.
+https://forums.freenas.org/index.php?resources/hardware-recommendations-guide.12/
+
 FreeNAS Worst Practices                <===
 Great information here - this is it.
 http://www.freenas.org/blog/freenas-worst-practices/
