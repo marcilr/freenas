@@ -25,6 +25,9 @@ FreeNAS Worst Practices                <===
 Great information here - this is it.
 http://www.freenas.org/blog/freenas-worst-practices/
 
+SLOG device selection
+https://forums.freenas.org/index.php?threads/slog-device-selection.57407/
+
 TrueNAS
 by iXsystems
 TrueNAS: Hybrid or All-Flash Storage Arrays With High Availability and 24x7 Support
