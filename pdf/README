@@ -19,10 +19,23 @@ Hardware_2016_R1e.pdf (826.2KB)
     Supermicro X10SRL-F <=== Perhaps with SC213LT-600LPB chassis?
     o Single socket R3 (LGA 2011) supports
       Intel Xeon processor E5-2600
-      v4†/ v3 and E5-1600 v4†/ v3 family
+      v4/v3 and E5-1600 v4†/ v3 family
+    o Memory: 8x 284pin DDR4-2133/ 1866/ 1600/ 1333 DIMM Slots,
+      Supports up to 512GB ECC Load Reduced Memory or up to
+      256GB ECC/REG Memory
+    o 7x PCI-E slots total: 2 PCI-E 3.0 x8, 2 PCI-E 3.0 x8 (in x16),
+      2 PCI-E 3.0 x4 (in x8) or 1 x8 + 1 x0 (auto-switch),
+      & 1 PCI-E 2.0 x4 (in x8)
     o Up to 1TB ram
     o 10x SATA3 (6Gbps)
+    price: $248.99 (amazon prime - Feb 13, 2017)
+    https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Delectronics&field-keywords=X10SRL-F
+
     http://www.supermicro.com/products/motherboard/xeon/c600/x10srl-f.cfm
+
+    Supermicro CPU Heatsink Cooling for LGA2011 SNK-P0048AP4
+    price: $33.00 (amazon prime - Feb 13, 2018)
+    https://www.amazon.com/Supermicro-Heatsink-Cooling-LGA2011-SNK-P0048AP4/dp/B0090YPQJ2/ref=pd_bxgy_147_img_2?_encoding=UTF8&pd_rd_i=B0090YPQJ2&pd_rd_r=TYEMA60NFNR7PJ4487ZQ&pd_rd_w=uRTJ7&pd_rd_wg=ai1Eh&psc=1&refRID=TYEMA60NFNR7PJ4487ZQ&dpID=51DxthSQdYL&preST=_SX300_QL70_&dpSrc=detail
 
     Supermicro X10SRi-F <===
     X10SRH-F
