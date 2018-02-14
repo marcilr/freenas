@@ -15,5 +15,17 @@ Hardware_2016_R1e.pdf (826.2KB)
   FreeNAS Hardware Recommendations Guide Rev 1e) 2017-05-06
   Community hardware recommendations for FreeNAS servers,
   oriented towards new users.
+  The Supermicro Xeon E5 boards looks awesome (p. 22):
+    Supermicro X10SRL-F <=== Perhaps with SC213LT-600LPB chassis?
+    o Single socket R3 (LGA 2011) supports
+      Intel Xeon processor E5-2600
+      v4†/ v3 and E5-1600 v4†/ v3 family
+    o Up to 1TB ram
+    o 10x SATA3 (6Gbps)
+    http://www.supermicro.com/products/motherboard/xeon/c600/x10srl-f.cfm
+
+    Supermicro X10SRi-F <===
+    X10SRH-F
+    X10SRH-LN4F
   https://forums.freenas.org/index.php?resources/hardware-recommendations-guide.12/
 
