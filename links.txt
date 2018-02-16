@@ -34,6 +34,14 @@ FreeNAS Worst Practices                <===
 Great information here - this is it.
 http://www.freenas.org/blog/freenas-worst-practices/
 
+Hardware Recommendations Guide Rev 1e) 2017-05-06
+Community hardware recommendations for FreeNAS servers,
+oriented towards new users
+This is the latest edition of the FreeNAS Community
+hardware recommendations guide.
+The current major version is R1, dated October 2016.
+https://forums.freenas.org/index.php?resources/hardware-recommendations-guide.12/
+
 SLOG device selection
 https://forums.freenas.org/index.php?threads/slog-device-selection.57407/
 
