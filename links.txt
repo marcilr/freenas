@@ -71,6 +71,11 @@ https://forums.freenas.org/index.php?resources/hardware-recommendations-guide.12
 
 My FreeNAS Build: Supermicro X10SL7, Intel Haswell Xeon, ECC RAM
 August 4, 2016 By Stephen 2 Comments
+o Supermicro X10SL7
+o 14 (!) SAS/SATA ports
+o Intel Xeon E3-1231v3 (Haswell) CPU
+o ECC memory from Crucial
+NOTE: The issue with the X10SL7 is a max of 32GB ram.
 http://blog.fosketts.net/2016/08/04/freenas-build-supermicro-x10sl7-intel-haswell-xeon-ecc-ram/
 
 SLOG device selection
