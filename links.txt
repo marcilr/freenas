@@ -8,6 +8,33 @@ FreeNAS related links
 
 Links
 =====
+A Complete Guide to FreeNAS Hardware Design,
+Part I: Purpose and Best Practices
+Feb 3, 2015 | FreeNAS | 18 comments
+http://www.freenas.org/blog/a-complete-guide-to-freenas-hardware-design-part-i-purpose-and-best-practices/
+
+A Complete Guide to FreeNAS Hardware Design,
+Part II: Hardware Specifics
+Feb 5, 2015 | FreeNAS | 17 comments
+http://www.freenas.org/blog/a-complete-guide-to-freenas-hardware-design-part-ii-hardware-specifics/
+
+A Complete Guide to FreeNAS Hardware Design,
+Part III: Pools, Performance, and Cache
+Feb 10, 2015 | FreeNAS | 3 comments
+http://www.freenas.org/blog/a-complete-guide-to-freenas-hardware-design-part-iii-pools-performance-and-cache/
+
+A Complete Guide to FreeNAS Hardware Design,
+Part IV: Network Notes & Conclusion
+Feb 12, 2015 | FreeNAS | 3 comments
+http://www.freenas.org/blog/a-complete-guide-to-freenas-hardware-design-part-iv-network-notes-conclusion/
+
+Building a NAS
+Posted by Rasmus on Tuesday, November 12. 2013
+References to:
+o IBM - SERVERAID M1015 8CHANNEL PCI-E X8 SAS/SATA
+o RaidZ2 16TB ZFS Volume
+https://toys.lerdorf.com/archives/58-Building-a-NAS.html
+
 FreeNAS
 The World's #1 Storage OS with over 9+ Million Downloads
 Enterprise-Grade Features, Open Source, BSD Licensed
