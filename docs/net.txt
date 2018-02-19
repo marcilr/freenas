@@ -1,0 +1,46 @@
+net.txt
+Created Wed Feb 14 10:10:19 AKST 2018
+Copyright (C) 2018 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Network
+
+
+Gigabit Ethernet
+================
+For Gigabit Ethernet, the recommendation is simple: Intel.
+Any Intel 1GbE controller will work fine.
+
+Intel I217/I218/I219-series
+---------------------------
+The I217/218/219 series of NICs is actually just a PHY for the gigabit
+Ethernet hardware present in the PCH.  These are basic adapters that
+will be fine for most users but lack certain features that may be useful
+in more complex environments. Note that -V models are not officially
+supported under FreeBSD (and thus FreeNAS), whereas the -LM models are
+officially supported.
+
+Intel I210
+----------
+The I210 NIC is a very popular model, close to a standalone I217 with
+some additional features (notably the ability to be multiplexed between
+host and BMC).
+
+Intel I350
+----------
+The I350 NIC is Intel’s high-end GbE model and supports high-end
+features such as Virtual Machine Device Queues (VMDq) and
+Single-Root I/O Virtualization (SR-IOV). It is available in
+both two- and four-port models.
+
+--FreeNAS Community Hardware Guide, p. 18
+
+
+Filelist
+========
+Hardware 2016 R1e.pdf
+===> Hardware_2016_R1e.pdf
+FreeNAS Community Hardware Guide
+2016-10 Edition Revision 1e)
+Maintained by Ericloewe of the FreeNAS forums
+https://forums.freenas.org/index.php?resources/hardware-recommendations-guide.12/
