@@ -85,3 +85,9 @@ TrueNAS
 by iXsystems
 TrueNAS: Hybrid or All-Flash Storage Arrays With High Availability and 24x7 Support
 http://www.freenas.org/for-business/
+
+TrueNAS
+All-Flash and Hybrid Arrays
+iXsystems
+Solid TrueNAS info here
+http://www.freenas.org/truenas/
