@@ -11,8 +11,8 @@ freenas.txt
   Enterprise-Grade Features, Open Source, BSD Licensed
   http://www.freenas.org/
 
-hardware/
-  Hardware
+hardware.txt
+  FreeNAS Hardware Design 
 
 links.txt
   FreeNAS related links
