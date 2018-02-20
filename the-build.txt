@@ -1,0 +1,34 @@
+the-build.txt
+Created Mon Feb 19 15:50:35 AKST 2018
+Copyright (C) 2018 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+From order of 2x Supermicro 2U X8DTU-F 24 bay 2x Xeon 6 Core Low Power
+on February 15, 2018
+
+
+motherboard:   X8DTU-F
+cpu:           Intel Xeon L5640 (Low Power) Hex (6) Core
+               2x L5640 2.26Ghz Six Core Low Power consumption 60W
+cpu speed:     2.26GHz
+# cpus:        2
+ram:           48GB DDR3 SDRAM (12x 4GB DDR3 ECC REG)
+               Up to 192GB DDR3 1333/ 1066/ 800MHz
+               ECC Registered DIMM / 48GB
+               Unbuffered DIMM
+lan:           2x integrated 1GBE Ethernet LAN port
+pcie:          2x Full Height X16 PCI-E 2.0 slots via Riser Card
+               Has LSI 9211-8i HBA for JBOD/ FREENAS
+drive slots:   24x 2.5" Drive Caddoes
+impi:          Integrated IPMI 2.0 with Dedicated Port
+power:         2x 800W Power Supply
+chassis:       2U Supermicro SC216EL1-R1200LPB
+rail kit
+
+warranty:      30 Day Warranty
+
+
+Links
+=====
+X8DTU-F
+http://www.supermicro.com/products/motherboard/QPI/5500/X8DTU-F.cfm
