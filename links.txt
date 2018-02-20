@@ -78,6 +78,10 @@ o ECC memory from Crucial
 NOTE: The issue with the X10SL7 is a max of 32GB ram.
 http://blog.fosketts.net/2016/08/04/freenas-build-supermicro-x10sl7-intel-haswell-xeon-ecc-ram/
 
+Network-attached storage
+From Wikipedia, the free encyclopedia
+https://en.wikipedia.org/wiki/Network-attached_storage
+
 SLOG device selection
 https://forums.freenas.org/index.php?threads/slog-device-selection.57407/
 
