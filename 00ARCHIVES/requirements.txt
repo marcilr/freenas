@@ -1,0 +1,349 @@
+requirements.txt
+Created Mon Feb 12 13:07:12 AKST 2018
+Copyright (C) 2018 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Requirements for nas
+
+
+chassis     - Chenbro RM41416B
+
+motherboard - X10SRH-CF, freebsd compatible, intel xeon E5-2600 v5/v3
+                and E5-1600 v4/v3, intel C612 chipset,
+                8x dimm, 1TB max ram, 10x SATA3 (6Gbps),
+                dual port i350-AM2 GbE lan, vga onboard
+                Has 8x sas3 ports.
+
+              X10SRi-F, freebsd compatible, intel xeon E5-2600 v5/v3 <===
+                and E5-1600 v4/v3, intel C612 chipset,
+                8x dimm, 1TB max ram, 10x SATA3 (6Gbps),
+                dual port i350-AM2 GbE lan, vga onboard
+                Lacks 8x sas2 ports that X10SRH-CF has.
+
+              X11SPM-F, microATX, max 768GB DDR4-2666 (6 dimm slots),
+                12x SATA3
+                Intel Xeon Scalable Processors, Single Socket P (LGA 3647)
+                supported, CPU TDP support 165W
+
+              X11SSL-CF, freenas compatible, 64GB max ram
+               
+
+cpu -         Xeon E5 CPUs being support for larger amounts of RAM
+ram -         64GB ECC or better
+
+network -     2x Intel I350
+              --FreeNAS Community Hardware Guide, p. 18
+
+ssd -         8GB of usable storage
+
+
+
+Chassis
+=======
+Supermicro 
+--FreeNAS Community Hardware Guide, p. 4
+
+
+Motherboard
+===========
+Supermicro (such as Supermicro’s -LN4F versions,
+which add an additional two NICs).and ASRock Rack
+--FreeNAS Community Hardware Guide, p. 6
+
+o Server motherboard best
+o Xeon-D boards
+o Most make use of Xeon-D’s integrated 10GbE controller,
+  exposing two such ports – most boards employ 10GBaseT,
+  but SFP+ boards are also available.
+o Must support ECC ram
+o Must support at least 64GB ram
+o Must have PCIe slots
+o Intelligent Platform Management Interface (IPMI) support
+
+
+Supermicro motherboards
+-----------------------
+-FreeNAS Community Hardware Guide, p. 7
+
+X11SSL-F
+This model is broadly equivalent to the X10SLL-F, but with the
+newer Skylake platform.  The C232 PCH employed limits the board’s
+feature set compared to other models, but it does allow for up
+to 64GB of RAM.
+1. Single socket H4 (LGA 1151) supports Intel Xeon processor E3-1200 v6/v5,
+  Intel 7th/6th Gen. Core i3 series,
+  Intel Celeron and Intel Pentium
+2. Intel C232 chipset
+3. Up to 64GB Unbuffered ECC UDIMM DDR4 2400MHz; 4 DIMM slots
+4. Expansion slots:
+  1 PCI-E 3.0 x8 (in x16),
+  1 PCI-E 3.0 x8,
+  1 PCI-E 3.0 x4 (in x8)
+5. Dual GbE LAN with Intel® i210-AT
+6. 6 SATA3 (6Gbps) via C232; RAID 0, 1, 5, 10
+7. I/O: 1 VGA, 1 COM, TPM header
+8. 2 SuperDOM with built-in power
+9. 5 USB 3.0 (2 rear, 2 via header(s), 1 Type A), 6 USB 2.0 (2 rear, 4 via header(s))
+10. Integrated IPMI 2.0 and KVM with Dedicated LAN
+
+X11SSM-F
+For the Skylake generation, the X11SSM-F is much more interesting
+than the X11SSL-F due to the use of the C236 PCH, which provides
+eight SATA ports instead of six. It is the most popular
+Skylake choice at the moment.
+1. Single socket H4 (LGA 1151) supports Intel Xeon
+   processor E3-1200 v6/v5, Intel 7th/6th Gen. Core™ i3 series,
+   Intel Celeron and Intel Pentium
+2. Intel C236 chipset
+3. Up to 64GB Unbuffered ECC UDIMM DDR4 2400MHz; 4 DIMM slots
+4. Expansion slots:
+   1 PCI-E 3.0 x8 (in x16),
+   1 PCI-E 3.0 x8,
+   2 PCI-E 3.0 x4 (in x8)
+5. Dual GbE LAN with Intel i210-AT
+6. 8 SATA3 (6Gbps) via C236;
+   RAID 0, 1, 5, 10
+7. I/O: 1 VGA, 2 COM, 2 SuperDOM, and TPM header
+8. 5 USB 3.0 (2 rear, 2 via header(s), 1 Type A),
+   6 USB 2.0 (2 rear, 4 via header(s))
+9. Integrated IPMI 2.0 and KVM with Dedicated LAN
+
+
+X11SSL-CF                                                       <===
+The Skylake equivalent of the X10SL7-F, the X11SSL-cF takes the
+X11SSL-F’s feature set and adds an LSI/Avago SAS 3008 SAS3
+controller, for a total of 14 direct-attach drives.
+With its 64GB RAM limit, it is a natural choice for those servers
+that would be limited by the X10SL7-F’s 32GB RAM limit.
+1. Single socket H4 (LGA 1151) supports Intel Xeon
+   processor E3-1200 v6/v5, Intel 7th/6th Gen. Core i3 series,
+   Intel Celeron and Intel Pentium
+2. Intel C232 chipset
+3. Up to 64GB Unbuffered ECC UDIMM DDR4 2400MHz; 4 DIMM slots
+4. Expansion slots: 
+   1 PCI-E 3.0 x8 (in x16), 
+   1 PCI-E 3.0 x4 (in x8),
+   1 PCI-E 3.0 x1
+5. Dual GbE LAN with Intel i210-AT
+6. 6 SATA3 (6Gbps) via C232; RAID 0, 1, 5, 10
+7. 8 SAS3 (12Gbps) via Broadcom 3008 SW controller; RAID 0, 1, 10
+8. I/O: 1 VGA, 2 COM, TPM header
+9. 2 SuperDOM with built-in power
+10. 5 USB 3.0 (2 rear, 2 via header(s), 1 Type A), 
+    6 USB 2.0 (2 rear, 4 via header(s))
+
+cpu
+===
+The major restriction on CPU choice for a FreeNAS server
+is support for ECC RAM. Intel Core i5 and Core i7, as well
+as consumer Atom, do not support ECC functionality.
+
+Most workloads can be handled by LGA115x – the main reason
+for Xeon E5 CPUs being support for larger amounts of RAM and,
+to a lesser extent, additional PCIe connectivity.
+Haswell/Broadwell and older Xeon E3 are limited to 32GB of
+RAM and Skylake CPUs are limited to 64GB of RAM.
+--FreeNAS Community Hardware Guide, p. 9
+
+Xeon E5-1650 v3/v4 (3.2 - 3.60 Ghz)
+The Xeon E5-1650 is a popular six-core model.  The v3 and v4
+models use the LGA2011-3 socket.  Lower core-count versions
+such as the E5-1620 exist. Xeon E5-16xx CPUs support single-socket
+systems only and do not support LRDIMMs. 
+--FreeNAS Community Hardware Guide, p. 10
+
+Intel Xeon E5-1650 v4 Hexa-core (6 Core) 3.60 GHz Processor - Socket LGA 2011-v3
+price: $771.47 (amazon - February 12, 2018)
+
+Intel Xeon E5-1650 v4 3.6 GHz Six-Core LGA 2011 Processor
+B&H # INHEXE51650 MFR # BX80660E51650V4
+price: $659.89
+https://www.bhphotovideo.com/c/product/1285810-REG/intel_bx80660e51650v4_xeon_e5_1650_v4_hexa_core.html?ap=y&c3api=1876%2C%7Bcreative%7D%2C%7Bkeyword%7D&gclid=CjwKCAiAk4XUBRB5EiwAHBLUMXNK_k4hw6OOAPIWN9jD3bpC0d3avd0An3KvvbkbAvnBrmsUPCDHAxoC_2UQAvD_BwE
+
+Xeon E5-2xxx and E5-4xxx
+An immense number of models exists to suit nearly all tastes.
+E5-2xxx CPUs support up to two sockets and E5-4xxx CPUs support
+up to four sockets. LRDIMM support is included.
+
+
+ram
+===
+8GB x 5 = 40GB
+The general rule of thumb here is to have 5 GB of memory
+for every 1TB of deduplicated data.  That said, there may
+be instances where more is required, but you will need to
+plan to meet the maximum potential memory requirements to
+avoid problems down the road.  To get a more precise
+estimate of the required memory for deduplication do the
+following: run the 'zdb -b (pool name); command for the
+desired pool to get an idea of the number of blocks
+required, then multiply the 'bp count' by 320 bytes to
+get your required memory.  If it's less than 5GB, still
+use the 5GB per terabyte of storage rule.  If it's higher,
+go with that number per terabyte.  
+--www.freenas.org/blog/freenas-worst-practices/
+
+-FreeNAS Community Hardware Guide, p. 13
+For best results, models should be chosen from the motherboard
+manufacturer’s Qualified Vendor List. As a less desirable
+alternative, RAM manufacturers have validation lists of their own
+and may guarantee compatibility with certain systems.
+
+It is hard to go wrong with RAM from any of the big DRAM producers:
+Micron (and their Crucial brand), Samsung and Hynix – in no
+particular order.
+
+RAM for above:
+  Kingston Technology ValueRAM 16GB 2133MHz DDR4 ECC CL15 DIMM
+  2Rx8 Desktop Memory KVR21E15D8/16 
+  model: KVR21E15D8/16 
+  price: $194.00
+
+  Would be good to see if there is Crucial compatible ram.
+
+
+Network
+=======
+Intel I350
+  The I350 NIC is Intel’s high-end GbE model and supports high-end
+  features such as Virtual Machine Device Queues (VMDq) and
+  Single-Root I/O Virtualization (SR-IOV). It is available in
+  both two- and four-port models.
+  --FreeNAS Community Hardware Guide, p. 18
+
+
+ssd (solid state disk)
+======================
+8GB of usable storage.
+Think M.2 is the way to go (not any more)
+
+        Crucial MX300 2TB 3D NAND SATA 2.5 Inch Internal SSD - CT2050MX300SSD1 <===
+        price: $528.70 (amazon prime - Feb 12, 2018)
+          $264 per TB
+
+        Crucial MX300 1TB 3D NAND SATA 2.5 Inch Internal SSD - CT1050MX300SSD1
+        price: $269.99 (amazon prime - Feb 12, 2018)
+          $270 per TB
+        
+The issue with the M.2's is a compatible carrying card:
+
+        Crucial MX300 1TB 3D NAND SATA M.2 (2280)
+        Internal SSD - CT1050MX300SSD4
+        by Crucial
+        price: $289.00 (amazon prime - Feb 12, 2018)
+          $289 per TB
+
+        12x $289 = $3,468
+
+        Thats 8 live in array with 2 live spares.
+        With 2 spares on the shelf.
+
+ASUS Hyper M.2 x16 Card Expansion NV Me M.2 drives and speed up to 128Gbps Components
+o Intel VROC ready with Intel Reset for X299 Series Motherboard models
+  with Sky lake-X processors
+o Supports four (4) additional NV Me M.2 drives using Intel VROC (Virtual RAID on CPU)
+  for transfer speeds up to 128Gbps
+o PCI Express 3.0 x16 interface, compatible with PCI Express x8 and x16 slots  <=== PCIe 3.0 x16
+o Integrated blower style fan for optimized cooling of M.2 drives
+o To enable VROC, a H/W standard or premium key to unlock features
+price: $135.99 (amazon prime - Feb 12, 2018)
+
+https://www.asus.com/us/Motherboard-Accessory/HYPER-M-2-X16-CARD/
+
+
+Filelist
+========
+chenbro-RM41416B.txt
+Chenbro RM41416B chassis
+storage/nas/hardware/chassis/chenbro-RM41416B.txt
+
+Hardware 2016 R1e.pdf
+===> Hardware_2016_R1e.pdf
+FreeNAS Community Hardware Guide
+2016-10 Edition Revision 1e)
+Maintained by Ericloewe of the FreeNAS forums
+see: storage/nas/freenas/pdf/Hardware_2016_R1e.pdf
+https://forums.freenas.org/index.php?resources/hardware-recommendations-guide.12/
+
+
+Links
+=====
+Crucial MX300 1TB 3D NAND SATA 2.5 Inch Internal SSD - CT1050MX300SSD1
+price: $269.99 (amazon prime - Feb 12, 2018)
+https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Delectronics&field-keywords=crucial+mx300+1tb
+
+FreeNAS: A Worst Practices Guide
+Sep 30, 2015 | FreeNAS | 7 comments
+http://www.freenas.org/blog/freenas-worst-practices/
+
+Intel Scalable Processors
+https://www.intel.com/content/www/us/en/processors/xeon/scalable/xeon-scalable-platform.html
+
+Intel Xeon E5-1650 v4 3.6 GHz Six-Core LGA 2011 Processor              <===
+B&H # INHEXE51650 MFR # BX80660E51650V4
+o 6 Cores & 12 Threads
+o 3.6 GHz Clock Speed
+o 4 GHz Maximum Turbo Frequency
+o LGA 2011 Socket
+price : $659.89 (B&H - Feb 12, 2018)
+https://www.bhphotovideo.com/c/product/1285810-REG/intel_bx80660e51650v4_xeon_e5_1650_v4_hexa_core.html?ap=y&c3api=1876%2C%7Bcreative%7D%2C%7Bkeyword%7D&gclid=CjwKCAiAk4XUBRB5EiwAHBLUMXNK_k4hw6OOAPIWN9jD3bpC0d3avd0An3KvvbkbAvnBrmsUPCDHAxoC_2UQAvD_BwE
+
+Intel Xeon E3-1240 Processors BX80677E31240V6                          <=== 3.7Ghz quad-core
+o Xeon E3-1240 v6 is a 64-bit quad-core x86 workstation/entry
+server microprocessor introduced by Intel in early 2017.
+o This chip, which is based on the Kaby Lake microarchitecture,
+  is fabricated on Intel's 14nm+ process.
+o The E3-1240 v6 operates at 3.7 GHz with a TDP of 72W supporting
+  a Turbo Boost frequency of 4.1 GHz.
+o The processor supports up to 64 GiB of dual-channel DDR4-2400
+  ECC memory. This model has no integrated graphics processor.
+price: $270.42 (amazon prime - Feb 12, 2018)
+https://www.amazon.com/Intel-Xeon-E3-1240-Processors-BX80677E31240V6/dp/B06XX8CHT2/ref=pd_bxgy_147_img_2?_encoding=UTF8&pd_rd_i=B06XX8CHT2&pd_rd_r=XH4NFG4MGJN3HVMAQ3EF&pd_rd_w=MjcbP&pd_rd_wg=Op9eF&psc=1&refRID=XH4NFG4MGJN3HVMAQ3EF
+
+Supermicro X10SRH-CF                 <===
+o Intel i350-AM2 Dual port GbE LAN
+o 10x SATA3 (6Gbps) via C612
+o 8x SAS3 (12Gbps) via Broadcom 3008 SW controller; RAID 0, 1, 10
+http://www.supermicro.com/products/motherboard/Xeon/C600/X10SRH-CF.cfm
+
+Supermicro X10SRH-CLN4F
+o Intel i350-AM4 Quad port GbE LAN
+o 10x SATA3 (6Gbps) via C612
+http://www.supermicro.com/products/motherboard/xeon/c600/x10srh-cln4f.cfm
+
+Supermicro X10SRL-F
+o Intel i210 Dual port GbE LAN
+o 10x SATA3 (6Gbps) via C612
+http://www.supermicro.com/products/motherboard/Xeon/C600/X10SRL-F.cfm
+
+Supermicro X11SSL-F
+https://www.supermicro.com/products/motherboard/Xeon/C236_C232/X11SSL-F.cfm
+
+Supermicro X11SSM-F
+https://www.supermicro.com/products/motherboard/Xeon/C236_C232/X11SSM-F.cfm
+
+X11SPM-TF                                                    <=======
+Intel Xeon Scalable Processors, Single Socket P (LGA 3647)
+supported, CPU TDP support 165W
+2x 10Gbe ethernet
+12x SATA3 (6Gbps)
+http://www.supermicro.com/products/motherboard/Xeon/C620/X11SPM-TF.cfm
+
+X11SPM-F, microATX                              <===
+max 768GB DDR4-2666 (6 dimm slots), 12x SATA3
+Intel Xeon Scalable Processors, Single Socket P (LGA 3647)
+supported, CPU TDP support 165W
+2x 1Gbe land
+Boot to M.2 and load 12x 1TB SSDs?
+http://www.supermicro.com/products/motherboard/Xeon/C620/X11SPM-F.cfm
+
+Supermicro X11SSL-CF
+https://www.supermicro.com/products/motherboard/Xeon/C236_C232/X11SSL-CF.cfm
+
+Supermicro Motherboard Micro ATX DDR4 LGA 1151 X11SSL-CF-O   <===
+price: $298.99 (amazon - Feb 12, 2018)
+https://www.amazon.com/Supermicro-Motherboard-Micro-DDR4-X11SSL-CF/dp/B018B7BMS2
+
+Supermicro X10SL7-F
+o Limited to 32GB DDR3 ECC 1600MHz UDIMMs in 4 sockets
+https://www.supermicro.com/products/motherboard/xeon/c220/x10sl7-f.cfm
