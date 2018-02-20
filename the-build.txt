@@ -16,12 +16,22 @@ ram:           48GB DDR3 SDRAM (12x 4GB DDR3 ECC REG)
                Up to 192GB DDR3 1333/ 1066/ 800MHz
                ECC Registered DIMM / 48GB
                Unbuffered DIMM
-lan:           2x integrated 1GBE Ethernet LAN port
+chipset:       Intel 5520 (Tylersburg) Chipset
+lan:           2x Intel 82576 Dual-Port Gigabit
+                  Ethernet Controller
+sata:          6x SATA2 (3 Gbps) Ports via
+                  ICH10R Controller
 pcie:          2x Full Height X16 PCI-E 2.0 slots via Riser Card
                Has LSI 9211-8i HBA for JBOD/ FREENAS
+               o 2 x SFF-8087 mini-SAS Internal Connectors
+               o SAS 6Gb/s Compliant
+               o PCI Express 2.0 x8 Interface
+               o Low-Profile
+               NOTE: Nice but only supports 8x drives
 drive slots:   24x 2.5" Drive Caddoes
 impi:          Integrated IPMI 2.0 with Dedicated Port
 power:         2x 800W Power Supply
+form factor:   proprietary
 chassis:       2U Supermicro SC216EL1-R1200LPB
 rail kit
 
