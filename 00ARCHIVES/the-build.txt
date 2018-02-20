@@ -1,0 +1,135 @@
+the-build.txt
+Created Tue Feb 13 08:22:57 AKST 2018
+Copyright (C) 2018 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+the Build
+
+
+motherboard - Supermicro X11SSL-CF
+  2U chassis:
+    SC823TQ-653LPB
+    SC825TQ-R720LPB
+    SC213LT-600LPB <=== 8x 2.5" hot-swap sas/sata
+      2U Heatsink:SNK-P0046A4
+
+cpu
+===
+Intel Xeon E5-1650 v4 3.6 GHz Six-Core LGA 2011 Processor
+B&H # INHEXE51650 MFR # BX80660E51650V4
+o 6 Cores & 12 Threads
+o 3.6 GHz Clock Speed
+o 4 GHz Maximum Turbo Frequency
+o LGA 2011 Socket
+price: $659.89 (B&H - Feb 13, 2018)
+https://www.bhphotovideo.com/c/product/1285810-REG/intel_bx80660e51650v4_xeon_e5_1650_v4_hexa_core.html
+
+E5-2600v4 (Grantley Refresh) - 14nm
+--www.siliconmechanics.com/i68833/2u-storage-server.php
+
+
+ram
+===
+The X11SSL-CF/-nF motherboard supports up to 64GB of
+unbuffered (UDIMM) DDR4 ECC 2400/2133/1866/1600/1333MHz memory
+in four memory slots. Populating these DIMM slots with memory
+modules of the same type and size will result in interleaved
+memory, which will improve memory performance.
+MNL-1782.pdf, p. 31
+
+Test memory includes:
+  DDR4 1.2V 2133 ECC
+  DDR4 1.2V-2400 ECC   <===
+    16GB Micron MTA18ASF2G72AZ-2G3A1 - low profile
+    16GB Micron MTA18ADF2G72AZ-2G3A1 - very low profile
+    16GB Micron MTA18ADF2G72AZ-2G3B1 - very low profile
+      Out of stock at amazon Feb 13, 2018
+  --https://www.supermicro.com/support/resources/mem.cfm
+
+
+  Micron MTA18ASF2G72AZ-2G3A1 = Crucial CT16G4WFD824A.18FA1
+  Micron MTA18ASF2G72AZ-2G3B1 = Crucial CT16G4WFD824A.18FB1
+  Micron MTA18ADF2G72AZ-2G3A1 = Crucial CT16G4XFD824A.18FA1
+  Micron MTA18ADF2G72AZ-2G3B1 = Crucial CT16G4XFD824A.18FB1
+  --build > x11ssm-f
+    https://forums.freenas.org/index.php?threads/please-save-me-from-myself.59200/
+
+  NOTE: Crucial is a brand of micron
+        --crucial.com
+
+Motherboard
+===========
+X11SSL-CF                                                       <===
+The Skylake equivalent of the X10SL7-F, the X11SSL-cF takes the
+X11SSL-F’s feature set and adds an LSI/Avago SAS 3008 SAS3
+controller, for a total of 14 direct-attach drives.
+With its 64GB RAM limit, it is a natural choice for those servers
+that would be limited by the X10SL7-F’s 32GB RAM limit.
+1. Single socket H4 (LGA 1151) supports Intel Xeon
+   processor E3-1200 v6/v5, Intel 7th/6th Gen. Core i3 series,
+   Intel Celeron and Intel Pentium
+2. Intel C232 chipset
+3. Up to 64GB Unbuffered ECC UDIMM DDR4 2400MHz; 4 DIMM slots
+4. Expansion slots: 
+   1 PCI-E 3.0 x8 (in x16), 
+   1 PCI-E 3.0 x4 (in x8),
+   1 PCI-E 3.0 x1
+5. Dual GbE LAN with Intel i210-AT
+6. 6 SATA3 (6Gbps) via C232; RAID 0, 1, 5, 10
+7. 8 SAS3 (12Gbps) via Broadcom 3008 SW controller; RAID 0, 1, 10
+8. I/O: 1 VGA, 2 COM, TPM header
+9. 2 SuperDOM with built-in power
+10. 5 USB 3.0 (2 rear, 2 via header(s), 1 Type A), 
+    6 USB 2.0 (2 rear, 4 via header(s))
+--supermicro.com
+
+
+"The general rule of thumb here is to have 5 GB of memory for every 1TB
+of deduplicated data.  That said, there may be instances where more is
+required, but you will need to plan to meet the maximum potential memory
+requirements to avoid problems down the road."
+--www.freenas.org/blog/freenas-worst-practices/
+
+
+raid levels
+===========
+RAIDZ1 (raid5) - only 1 drive redundancy
+RAIDZ2 (raid6) - 2 drive redundancy
+RAIDZ3 (raid7) - 3 drive redundancy
+--ZFS Raidz Performance, Capacity and Integrity
+  https://calomel.org/zfs_raid_speed_capacity.html
+
+
+
+Links
+=====
+E5-2600v4 Platform Overview
+Formerly known as “Grantley Refresh”
+E5-2600v3 (Grantley) - 22nm
+E5-2600v4 (Grantley Refresh) - 14nm <===
+https://www.siliconmechanics.com/files/Intel-Xeon-E5-2600v4-Platform-Guide.pdf
+
+FreeNAS: A Worst Practices Guide
+Sep 30, 2015 | FreeNAS | 8 comments
+http://www.freenas.org/blog/freenas-worst-practices/
+
+RaidZ3 Drive Configuration & Performance
+Discussion in 'Hardware' started by engmsf, May 23, 2014.
+https://forums.freenas.org/index.php?threads/raidz3-drive-configuration-performance.21100/
+
+SuperChassis 213LT-600LB
+Fits X11SSL-CF, 8x 2.5" hot-swap sas/sata
+https://www.supermicro.com/products/chassis/2U/213/SC213LT-600LPB
+
+The truth about memory manufacturers
+"Crucial is a brand of Micron"
+http://www.crucial.com/usa/en/store-truth-about-memory-manufacturers
+
+X11SSL-CF
+This board rocks since it has 14-SATA ports onboard.
+https://www.supermicro.com/products/motherboard/Xeon/C236_C232/X11SSL-CF.cfm
+
+ZFS Raidz Performance, Capacity and Integrity
+comparing speed, space and safety per raidz type
+Great page plenty of details!
+https://calomel.org/zfs_raid_speed_capacity.html
