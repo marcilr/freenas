@@ -3,8 +3,8 @@ Created Mon Feb 19 15:50:35 AKST 2018
 Copyright (C) 2018 by Raymond E. Marcil <marcilr@gmail.com>
 
 
-From order of 2x Supermicro 2U X8DTU-F 24 bay 2x Xeon 6 Core Low Power
-on February 15, 2018
+Ordered of 2x Supermicro 2U X8DTU-F 24 bay 2x Xeon 6 Core Low Power
+on February 15, 2018:
 
 
 motherboard:   X8DTU-F
@@ -38,9 +38,43 @@ rail kit
 warranty:      30 Day Warranty
 
 
+Thu Feb 15 06:40:26 AKST 2018
+=============================
+Order 2x Supermicro 2U X8DTU-F 24 bay 2x Xeon 6 Core Low Power
+from UNIXSurplusCom on ebay:
+
+
+Supermicro 2U X8DTU-F 24 bay 2x Xeon 6 Core Low Power
+FreeNas SAS2 SSD SATA III
+
+eBay item number:152891899220
+
+Condition: Used
+price:                                 $399.99 2x $399.99 = $798.00
+Standard (4-9 business days) UPS Ground                      $95.00
+1-Year Peripherals Refurbished Protection Plan   2x $31.49 = $62.98
+  (For Items $350-$399.99)                       ------------------
+                                                   Total:   $955.98
+
+NOTE: I thought there was an additional $300 for UPS 2nd day air.
+
+Checking Fidelity:
+  Transaction Date:   02/15/2018
+  Posting Date:       02/16/2018
+  Description:        PAYPAL *UNIXSURPLUS 402-935-7733 CA
+  Amount:             $893.00
+
+  Transaction Date:   02/15/2018
+  Posting Date:       02/16/2018
+  Description:        PAYPAL *FEDERALWARR 402-935-7733 CA
+  Amount:             $62.98
+
+  $893.00 + $62.98 = $955.98 (tracks with auction details)
+
+
 Links
 =====
-Intel® Xeon® Processor L5640
+Intel Xeon Processor L5640
 12M Cache, 2.26 GHz, 5.86 GT/s Intel QPI
 https://ark.intel.com/products/47926/Intel-Xeon-Processor-L5640-12M-Cache-2_26-GHz-5_86-GTs-Intel-QPI
 
