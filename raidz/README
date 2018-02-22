@@ -1,0 +1,12 @@
+README
+Created Wed Feb 21 16:09:29 AKST 2018
+Copyright (C) 2018 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Filelist
+========
+links.txt
+  raidz related links
+
+raidz.txt
+  RAID Z is the ZFS parity raid mechanism
