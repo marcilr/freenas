@@ -57,6 +57,9 @@ Community hardware recommendations for FreeNAS servers,
 oriented towards new users.
 https://forums.freenas.org/index.php?resources/hardware-recommendations-guide.12/
 
+FreeNAS Buyer’s Guides
+https://www.servethehome.com/buyers-guides/
+
 FreeNAS Worst Practices                <===
 Great information here - this is it.
 http://www.freenas.org/blog/freenas-worst-practices/
@@ -84,6 +87,9 @@ https://en.wikipedia.org/wiki/Network-attached_storage
 
 SLOG device selection
 https://forums.freenas.org/index.php?threads/slog-device-selection.57407/
+
+Top Picks for FreeNAS HBAs (Host Bus Adapters)
+https://www.servethehome.com/buyers-guides/top-hardware-components-freenas-nas-servers/top-picks-freenas-hbas/
 
 TrueNAS
 by iXsystems
