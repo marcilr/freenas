@@ -6,6 +6,27 @@ Copyright (C) 2018 by Raymond E. Marcil <marcilr@gmail.com>
 RAIDZ
 
 
+raidz1 - similar to RAID 5, allows one disk to fail
+raidz2 - similar to RAID 6, allows two disks to fail
+
+raidz3 - Also referred to as RAID 7 allows three disks to fail[1]
+  The need for RAID-Z3 arose recently because RAID configurations
+  with larger disks (say, 6–10 TB) may take a long time to repair,
+  the worst case being weeks.  During those weeks, the rest of
+  the disks in the RAID are stressed more because of the
+  additional intensive repair process and might subsequently fail,
+  too.  By using RAID-Z3, the risk involved with disk replacement
+  is reduced.[2]
+--en.wikipedia.org/wiki/Non-standard_RAID_levels#RAID-Z
+
+In addition to handling whole-disk failures, RAID-Z can also
+detect and correct silent data corruption, offering "self-healing
+data": when reading a RAID-Z block, ZFS compares it against its
+checksum, and if the data disks did not return the right answer,
+ZFS reads the parity and then figures out which disk returned bad
+data.  Then, it repairs the damaged data and returns good data to
+the requestor.[2]
+
 RAID Z is the ZFS parity raid mechanism, with Z2 and Z3
 referring to dual and triple parity, respectively. Parity
 has repercussions both in terms of fault tolerance and
@@ -43,5 +64,17 @@ eg 9 disks for a Z1, 18 for a Z2, 27 for Z3.
 
 Links
 =====
+[2] "Why RAID 6 stops working in 2019". ZDNet.
+    February 22, 2010. Retrieved October 26, 2014.
+    http://www.zdnet.com/blog/storage/why-raid-6-stops-working-in-2019/805
+
+[1] "ZFS Raidz Performance, Capacity and Integrity".
+    calomel.org. Retrieved 23 June 2017.
+
+RAID-Z
+Non-standard RAID levels
+From Wikipedia, the free encyclopedia
+https://en.wikipedia.org/wiki/Non-standard_RAID_levels#RAID-Z
+
 When is RAIDZ3 required?
 http://forums.nas4free.org/viewtopic.php?t=2710
