@@ -13,3 +13,9 @@ https://en.wikipedia.org/wiki/Non-standard_RAID_levels#RAID-Z
 
 When is RAIDZ3 required?
 http://forums.nas4free.org/viewtopic.php?t=2710
+
+ZFS
+https://en.wikipedia.org/wiki/ZFS
+
+ZFS, Software RAID using ZFS
+https://en.wikipedia.org/wiki/ZFS#Software_RAID_using_ZFS
