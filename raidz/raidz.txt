@@ -6,14 +6,15 @@ Copyright (C) 2018 by Raymond E. Marcil <marcilr@gmail.com>
 RAIDZ
 
 
-raidz1 - similar to RAID 5, allows one disk to fail
-raidz2 - similar to RAID 6, allows two disks to fail
+raidz1 (single parity) - similar to RAID 5, allows one disk to fail
 
-raidz3 - Also referred to as RAID 7 allows three disks to fail[1]
-  The need for RAID-Z3 arose recently because RAID configurations
-  with larger disks (say, 6–10 TB) may take a long time to repair,
-  the worst case being weeks.  During those weeks, the rest of
-  the disks in the RAID are stressed more because of the
+raidz2 (double parity) - similar to RAID 6, allows two disks to fail
+
+raidz3 (triple parity) - Also referred to as RAID 7 allows three
+  disks to fail[1]  The need for RAID-Z3 arose recently because RAID
+  configurations with larger disks (say, 6–10 TB) may take a long
+  time to repair, the worst case being weeks.  During those weeks,
+  the rest of the disks in the RAID are stressed more because of the
   additional intensive repair process and might subsequently fail,
   too.  By using RAID-Z3, the risk involved with disk replacement
   is reduced.[2]
