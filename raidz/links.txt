@@ -26,6 +26,7 @@ Under raidz3:
 12x 1TB ===> 7.83TB usable
 13x 1TB ===> 8.50TB usable
 14x 1TB ===> 9.16TB usable         <=== 
+This is a great page!
 http://wintelguy.com/zfs-calc.pl
 
 ZFS, Software RAID using ZFS
