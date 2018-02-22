@@ -1,0 +1,47 @@
+raidz.txt
+Created Wed Feb 21 16:10:31 AKST 2018
+Copyright (C) 2018 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+RAIDZ
+
+
+RAID Z is the ZFS parity raid mechanism, with Z2 and Z3
+referring to dual and triple parity, respectively. Parity
+has repercussions both in terms of fault tolerance and
+performance.  Parity generation has a performance cost
+as well as resource demand (each parity member requires
+a disk and a host bus channel) so generally should be
+accounted for in terms of sensitivity to downtime (each
+additional parity bit results in an additional disk that
+can be lost without affecting data availability) within
+the requirements for usable space and available
+mechanical resources.
+
+Add to that the fact that data is written and read in
+blocks in binary arrangement, leading to the need to
+align data to powers of two.  Since RAID stripes consist
+of a number of data blocks for each (set of) parity
+block(s), optimal RAID arrangements necessarily follow
+powers of two for maximum efficiency.  Since one parity
+block for 2 drives is very costly in terms of hardware,
+optimal RAID configuration therefore follow in 4s-
+1 parity disk per 4 data stripes.  This provides the
+most commonly optimal arrangement of aligned stripes
+with sufficient fault tolerance.  So double parity (Z2)
+would be optimally applied to 10 disk RAIDsets, and
+triple parity (Z3) for 15 disk RAIDsets. 
+
+Above 15 you'd want to split your data into separate
+raidsets, or create compound (nested) RAID arrangements;
+on occasion it may makes sense to double up if the
+application is not sensitive to the greater exposure to fault- 
+eg 9 disks for a Z1, 18 for a Z2, 27 for Z3.
+--by alexplatform » 22 Feb 2013 00:30
+  forums.nas4free.org/viewtopic.php?t=2710
+
+
+Links
+=====
+When is RAIDZ3 required?
+http://forums.nas4free.org/viewtopic.php?t=2710
