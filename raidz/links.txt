@@ -1,0 +1,12 @@
+links.txt
+Created Wed Feb 21 16:07:31 AKST 2018
+Copyright (C) 2018 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+raidz related links
+
+
+Links
+=====
+When is RAIDZ3 required?
+http://forums.nas4free.org/viewtopic.php?t=2710
