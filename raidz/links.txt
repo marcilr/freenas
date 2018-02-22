@@ -8,5 +8,8 @@ raidz related links
 
 Links
 =====
+RAID-Z
+https://en.wikipedia.org/wiki/Non-standard_RAID_levels#RAID-Z
+
 When is RAIDZ3 required?
 http://forums.nas4free.org/viewtopic.php?t=2710
