@@ -17,5 +17,16 @@ http://forums.nas4free.org/viewtopic.php?t=2710
 ZFS
 https://en.wikipedia.org/wiki/ZFS
 
+ZFS / RAIDZ Capacity Calculator (beta)
+Under raidz3:
+8x  1TB ===> 4.12TB usable
+9x  1TB ===> 4.99TB usable
+10x 1TB ===> 6.01TB usable
+11x 1TB ===> 7.18TB usable
+12x 1TB ===> 7.83TB usable
+13x 1TB ===> 8.50TB usable
+14x 1TB ===> 9.16TB usable   <=== 
+http://wintelguy.com/zfs-calc.pl
+
 ZFS, Software RAID using ZFS
 https://en.wikipedia.org/wiki/ZFS#Software_RAID_using_ZFS
