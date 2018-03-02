@@ -6,8 +6,22 @@ Copyright (C) 2018 by Raymond E. Marcil <marcilr@gmail.com>
 Installing FreeNAS
 
 
-1. Get latest STABLE version of FreeNAS 9.3 can be downloaded from:
-   http://download.freenas.org/.
+What do I need to get started with FreeNAS?
+To use FreeNAS, you’ll need standard PC hardware with a 64-bit processor
+and at least 8GB of RAM.  FreeNAS is intended to be installed on USB
+Flash drive, with a recommended minimum size of 8GB.  16GB provides more
+room for boot environments.  FreeNAS supports installation from a burned
+CD or by directly burning to the flash drive.  Boot from the installed
+drive and in most networks you will automatically be provided with an
+IP address.  Point your web browser at the IP address of the FreeNAS
+system and you’re good to go!  Read the FreeNAS Documentation[1] for more
+information.
+--www.freenas.org/faq/
+
+
+1. Getting FreeNAS
+   The latest STABLE version of FreeNAS 9.3 can be downloaded from:
+     http://download.freenas.org/.
 
    NOTE: FreeNAS will only install to 64-bit hardware and the installer
    will not work on 32-bit hardware.
@@ -33,9 +47,83 @@ Installing FreeNAS
 
    The value produced by running the command should match the value
    of the sha256.txt file.
+   --Installing and Upgrading FreeNAS
+     https://doc.freenas.org/9.3/freenas_install.html
+      
+2. Preparing the Media
+   Beginning with version 9.3, FreeNAS must be installed using a
+   menu-driven installer, as the ZFS boot partition is created
+   during the installation.  To perform an installation, download
+   the .iso file and write it to either a CD or a USB stick.
 
+   To burn the .iso file to CD, use a CD burning utility.
+
+   The command which is used to burn the .iso file to a compact
+   flash card or USB thumbdrive depends upon the operating system.
+   This section demonstrates utilities for several operating
+   systems.
+
+   Note: if you will be burning the installation file to a USB stick,
+   you will need two USB slots, each with an inserted USB device,
+   where one USB stick contains the installer and the other USB stick
+   is selected to install into.  When performing the installation, be
+   sure to select the correct USB device to install to.  In other
+   words, you can not install FreeNAS into the same USB stick that
+   you boot the installer from.   After installation, remove the USB
+   stick containing the installer, and if necessary, configure the
+   BIOS to boot from the remaining USB stick.
+
+   Once you have written the .iso file to the installation media,
+   make sure the boot order in the BIOS is set to boot from that
+   device and boot the system to start the installation.
+
+3. On FreeBSD or Linux
+   On a FreeBSD or Linux system, the dd command can be used to write
+   the .iso file to an inserted USB thumb drive or compact flash
+   device.  Example 2.2a demonstrates writing the image to the first
+   USB device (/dev/da0) on a FreeBSD system.  Substitute the
+   filename of your .iso file and the device name representing the
+   device to write to on your system.
+
+   Warning: The dd command is very powerful and can destroy any
+   existing data on the specified device. Be very sure that you know
+   the device name to write to and that you do not typo the device
+   name when using dd! If you are uncomfortable using this command,
+   write the .iso file to a CD instead.
+
+   Example 2.2a: Writing the .iso file to a USB Thumb Drive
+
+     dd if=FreeNAS-9.3-RELEASE-x64.iso of=/dev/da0 bs=64k
+     6117+0 records in
+     6117+0 records out
+     400883712 bytes transferred in 88.706398 secs (4519220 bytes/sec)
+
+   When using the dd command:
+   o if= refers to the input file, or the name of the file to write
+     to the device.
+
+   o of= refers to the output file; in our case, the device name of
+     the flash card or removable USB drive.  You may have to increment
+     the number in the name if it is not the first USB device.  On
+     Linux, use /dev/sdX, where X refers to the letter of the USB device.
+
+   o bs= refers to the block size
+
+3. Performing the Installation
+   With the installation media inserted, boot the system.  This should
+   load the FreeNAS installation’s GRUB menu...
+
+   See Performing the Installation at Installing and Upgrading FreeNAS
+   for details:
+     https://doc.freenas.org/9.3/freenas_install.html
 
 Links
 =====
+[1] FreeNAS Documention
+http://doc.freenas.org/
+
+FreeNAS FAQ
+http://www.freenas.org/faq/
+
 Installing and Upgrading FreeNAS
 https://doc.freenas.org/9.3/freenas_install.html
