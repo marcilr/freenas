@@ -1,0 +1,41 @@
+INSTALL
+Created Fri Mar  2 08:28:29 AKST 2018
+Copyright (C) 2018 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Installing FreeNAS
+
+
+1. Get latest STABLE version of FreeNAS 9.3 can be downloaded from:
+   http://download.freenas.org/.
+
+   NOTE: FreeNAS will only install to 64-bit hardware and the installer
+   will not work on 32-bit hardware.
+
+   The download page contains the following types of files:
+
+   o .iso: this is a bootable installer that can be written to
+     either a CD or USB flash as described in Preparing the Media.
+
+   o .GUI_Upgrade.txz: this is a compressed firmware upgrade image.
+     If your intent is to upgrade FreeNAS, download this file and
+     see the section on Upgrading.
+
+   Each file has an associated sha256.txt file which should be used
+   to verify the integrity of the downloaded file.  The command you
+   use to verify the checksum varies by operating system:
+
+   o on a BSD system use the command sha256 name_of_file
+   o on a Linux system use the command sha256sum name_of_file
+   o on a Mac system use the command shasum -a 256 name_of_file
+   o on a Windows or Mac system, you can also install a utility
+     such as HashCalc or HashTab
+
+   The value produced by running the command should match the value
+   of the sha256.txt file.
+
+
+Links
+=====
+Installing and Upgrading FreeNAS
+https://doc.freenas.org/9.3/freenas_install.html
