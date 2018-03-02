@@ -20,6 +20,17 @@ faster.
 --www.freenas.org/faq/
 
 
+Can FreeNAS be used as a Media Server?
+======================================
+It sure can! FreeNAS includes support for a wide variety of third-party
+software plugins, including Plex Media Server.  Plex Media Server allows
+FreeNAS to stream television shows, movies, and music to a wide variety
+of devices.  If you’re concerned about system requirements, the FreeNAS
+Mini Storage Device from iXsystems has enough power to support 1080p
+HD video and still run normal FreeNAS operations.
+--www.freenas.org/faq/
+
+
 Required memory
 ===============
 The general rule of thumb here is to have 5 GB of memory for every 1TB of
