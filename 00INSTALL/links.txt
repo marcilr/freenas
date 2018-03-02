@@ -17,6 +17,9 @@ https://www.freebsd.org/releases/11.1R/hardware.html
 FreeNAS Hardware Requirements
 http://web.freenas.org/hardware-requirements/
 
+FreeNAS latest download (11.1)
+http://download.freenas.org/latest/
+
 Installing and Upgrading FreeNAS
 Also has interesting details of create a vm under VMware ESXi
 using VMware vSphere client
