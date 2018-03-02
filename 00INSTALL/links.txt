@@ -11,6 +11,9 @@ Links
 Download URLs for VMware vSphere Client (2089791)
 https://kb.vmware.com/s/article/2089791
 
+FreeNAS Hardware Requirements
+http://web.freenas.org/hardware-requirements/
+
 Installing and Upgrading FreeNAS
 Also has interesting details of create a vm under VMware ESXi
 using VMware vSphere client
