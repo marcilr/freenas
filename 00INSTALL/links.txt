@@ -8,7 +8,12 @@ FreeNAS installation related links
 
 Links
 =====
+Download URLs for VMware vSphere Client (2089791)
+https://kb.vmware.com/s/article/2089791
+
 Installing and Upgrading FreeNAS
+Also has interesting details of create a vm under VMware ESXi
+using VMware vSphere client
 https://doc.freenas.org/9.3/freenas_install.html
 
 My Thoughts after Upgrading to FreeNAS 11
