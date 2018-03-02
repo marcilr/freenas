@@ -6,14 +6,18 @@ Copyright (C) 2016 by Raymond E. Marcil <marcilr@gmail.com>
 FreeNAS
 
 
-What is FreeNAS?
-================
-FreeNAS is an operating system that can be installed on virtually any
-hardware platform to share data over a network.  FreeNAS is the simplest
-way to create a centralized and easily accessible place for your data.
-Use FreeNAS with ZFS to protect, store, backup, all of your data.  FreeNAS
-is used everywhere, for the home, small business, and the enterprise.
---freenas.org
+FreeNAS is a Free and Open Source Network Attached Storage (NAS)
+software appliance.  This means that you can use FreeNAS to share
+data over file-based sharing protocols, including CIFS for Windows
+users, NFS for Unix-like operating systems, and AFP for Mac OS X
+users.  FreeNAS uses the ZFS file system to store, manage, and
+protect data.  ZFS provides advanced features like snapshots to
+keep old versions of files, incremental remote backups to keep
+your data safe on another device without huge file transfers, and
+intelligent compression, which reduces the size of files so
+quickly and efficiently that it actually helps transfers happen
+faster.
+--www.freenas.org/faq/
 
 
 Required memory
