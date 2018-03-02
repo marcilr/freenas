@@ -1,0 +1,16 @@
+links.txt
+Created Fri Mar  2 08:36:00 AKST 2018
+Copyright (C) 2018 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+FreeNAS installation related links
+
+
+Links
+=====
+Installing and Upgrading FreeNAS
+https://doc.freenas.org/9.3/freenas_install.html
+
+My Thoughts after Upgrading to FreeNAS 11
+Detail of virtualization using bhyve hypervisor
+https://blog.brianmoses.net/2017/07/my-thoughts-after-upgrading-to-freenas-11.html
