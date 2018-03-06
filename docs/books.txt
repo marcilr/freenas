@@ -1,0 +1,18 @@
+books.txt
+Created Mon Mar  5 15:34:58 AKST 2018
+Copyright (C) 2018 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+FreeNas Books
+
+
+Books
+=====
+Learning FreeNAS
+Configure and manage a network attached storage solution
+by Gary Sims
+Copyright 2008 Packt Publishing
+ISBN 978-1-847194-68-8
+www.packpub.com
+Looks pretty darn good.
+https://books.google.com/books?id=DmJVYdrs1QYC&pg=PT240&lpg=PT240&dq=freenas+add+array&source=bl&ots=56q16YMKUc&sig=KAPnTIuebzEFauf0wl9QDkdiNeE&hl=en&sa=X&ved=0ahUKEwjhsN3PuNbZAhVi6YMKHXgmDUI4ChDoAQg9MAI#v=onepage&q=freenas%20add%20array&f=false
