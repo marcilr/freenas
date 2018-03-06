@@ -11,8 +11,35 @@ Books
 Learning FreeNAS
 Configure and manage a network attached storage solution
 by Gary Sims
+published: AUgust 2008
 Copyright 2008 Packt Publishing
 ISBN 978-1-847194-68-8
 www.packpub.com
+price: $10.00
+
+Preview in Mapt
+Code Files
+Learning FreeNAS
+Gary Sims
+August 2008
+1 customer reviews
+Configure and manage a network attached storage solution
+Quick links: > Table of contents > What will you learn? > Product reviews
+ Mapt Subscription
+FREE
+$29.99/m after trial
+eBook
+$10.00
+RRP $23.99
+Save 58%
+Print + eBook
+$39.99
+RRP $39.99
+What do I get with an eBook?
+o Download this book in EPUB, PDF, MOBI formats
+o DRM FREE - read and interact with your content when you want,
+  where you want, and how you want
+o Access this title in the Mapt reader
 Looks pretty darn good.
 https://books.google.com/books?id=DmJVYdrs1QYC&pg=PT240&lpg=PT240&dq=freenas+add+array&source=bl&ots=56q16YMKUc&sig=KAPnTIuebzEFauf0wl9QDkdiNeE&hl=en&sa=X&ved=0ahUKEwjhsN3PuNbZAhVi6YMKHXgmDUI4ChDoAQg9MAI#v=onepage&q=freenas%20add%20array&f=false
+https://www.packtpub.com/networking-and-servers/learning-freenas
