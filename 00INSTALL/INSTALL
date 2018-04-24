@@ -21,7 +21,7 @@ information.
 
 1. Getting FreeNAS
    The latest STABLE version of FreeNAS 9.3 can be downloaded from:
-     http://download.freenas.org/.
+     http://download.freenas.org/
 
    NOTE: FreeNAS will only install to 64-bit hardware and the installer
    will not work on 32-bit hardware.
