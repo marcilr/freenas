@@ -23,6 +23,11 @@ information.
    The latest STABLE version of FreeNAS 9.3 can be downloaded from:
      http://download.freenas.org/
 
+   $ wget https://download.freenas.org/11/latest/x64/FreeNAS-11.1-U4.iso
+
+   Found that FreeNAS-11.1-U4.iso is 605M - github's max is 100M.
+   i.e. Don't commit to github.
+
    NOTE: FreeNAS will only install to 64-bit hardware and the installer
    will not work on 32-bit hardware.
 
