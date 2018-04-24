@@ -17,6 +17,9 @@ freenas.txt
 hardware.txt
   FreeNAS Hardware Design 
 
+iso/
+  FreeNAS ISOs
+
 links.txt
   FreeNAS related links
 
