@@ -14,6 +14,11 @@ https://kb.vmware.com/s/article/2089791
 FreeBSD Hardware Compatibility List
 https://www.freebsd.org/releases/11.1R/hardware.html
 
+FreeNAS 11.1 is Now Available for Download!
+Dec 13, 2017 | FreeNAS, FreeNAS 11 | 19 comments
+FreeNAS 11.1 is the latest stable release (April 24, 2018)
+http://www.freenas.org/blog/freenas-11-1-release/
+
 FreeNAS Hardware Requirements
 http://web.freenas.org/hardware-requirements/
 
