@@ -72,6 +72,9 @@ hardware recommendations guide.
 The current major version is R1, dated October 2016.
 https://forums.freenas.org/index.php?resources/hardware-recommendations-guide.12/
 
+Installing and Upgrading FreeNAS
+https://doc.freenas.org/9.3/freenas_install.html
+
 My FreeNAS Build: Supermicro X10SL7, Intel Haswell Xeon, ECC RAM
 August 4, 2016 By Stephen 2 Comments
 o Supermicro X10SL7
