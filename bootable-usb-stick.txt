@@ -15,6 +15,42 @@ Note: FreeNAS will only install to 64-bit hardware and the
       --doc.freenas.org/9.3/freenas_install.html
 
 
+On FreeBSD or Linux
+===================
+On a FreeBSD or Linux system, the dd command can be used to
+write the .iso file to an inserted USB thumb drive or compact
+flash device.  Example 2.2a demonstrates writing the image to
+the first USB device (/dev/da0) on a FreeBSD system.
+Substitute the filename of your .iso file and the device name
+representing the device to write to on your system.
+
+Warning The dd command is very powerful and can destroy any
+existing data on the specified device.  Be very sure that you
+know the device name to write to and that you do not typo the
+device name when using dd!  If you are uncomfortable using
+this command, write the .iso file to a CD instead.
+
+Writing the .iso file to a USB Thumb Drive:
+  dd if=FreeNAS-9.3-RELEASE-x64.iso of=/dev/da0 bs=64k
+  6117+0 records in
+  6117+0 records out
+  400883712 bytes transferred in 88.706398 secs (4519220 bytes/sec)
+
+When using the dd command:
+  if= refers to the input file, or the name of the file to write to
+      the device.
+
+  of= refers to the output file; in our case, the device name of
+      the flash card or removable USB drive. You may have to
+      increment the number in the name if it is not the first USB
+      device.  On Linux, use /dev/sdX, where X refers to the letter
+      of the USB device.
+
+  bs= refers to the block size
+
+--doc.freenas.org/9.3/freenas_install.html#on-freebsd-or-linux
+
+
 usb stick
 =========
 64GB Cruzer Fit | USB Flash Drive
