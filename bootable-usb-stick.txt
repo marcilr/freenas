@@ -9,10 +9,16 @@ Bootable FreeNAS usb stick
 The goal for the 2x Supermicro 2U X8DTU-F is to install 
 FreeNAS on a bootlable usb stick.
 
-
 Note: FreeNAS will only install to 64-bit hardware and the
       installer will not work on 32-bit hardware.
       --doc.freenas.org/9.3/freenas_install.html
+
+
+Create bootable FreeNAS usb stick
+=================================
+1. Get latest stable FreeNAS from http://download.freenas.org/
+$ wget http://download.freenas.org/stable/FreeNAS-11.1-RELEASE-manual-update.tar
+$ wget http://download.freenas.org/stable/FreeNAS-11.1-RELEASE-manual-update.tar.sha256
 
 
 On FreeBSD or Linux
@@ -53,7 +59,7 @@ When using the dd command:
 
 usb stick
 =========
-64GB Cruzer Fit | USB Flash Drive
+64GB Cruzer Fit USB Flash Drive
 make:  Sandisk
 model: SDC233-064G-B35
 usb:   USB 2.0/3.0
@@ -69,6 +75,9 @@ http://download.freenas.org/
 FreeNAS 9.3 - ISO into a bootable USB Stick
 https://forums.freenas.org/index.php?threads/freenas-9-3-iso-into-a-bootable-usb-stick.25471/
 
+FreeNAS 11.1 (latest stable as of September 12, 2018)
+http://download.freenas.org/stable/
+
 Installing and Upgrading FreeNAS
 "If you are a home user who is experimenting with FreeNAS,
 you can install FreeNAS on an inexpensive USB thumb drive
@@ -77,4 +86,3 @@ https://doc.freenas.org/9.3/freenas_install.html
 
 On FreeBSD or Linux 
 https://doc.freenas.org/9.3/freenas_install.html#on-freebsd-or-linux
-
