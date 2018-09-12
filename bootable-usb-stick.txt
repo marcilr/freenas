@@ -10,6 +10,11 @@ The goal for the 2x Supermicro 2U X8DTU-F is to install
 FreeNAS on a bootlable usb stick.
 
 
+Note: FreeNAS will only install to 64-bit hardware and the
+      installer will not work on 32-bit hardware.
+      --doc.freenas.org/9.3/freenas_install.html
+
+
 usb stick
 =========
 64GB Cruzer Fit | USB Flash Drive
