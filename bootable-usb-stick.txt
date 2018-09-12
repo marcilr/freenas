@@ -1,0 +1,16 @@
+bootable-usb-stick.txt
+Created Wed Sep 12 12:56:16 AKDT 2018
+Copyright (C) 2018 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+The goal for the 2x Supermicro 2U X8DTU-F is to install 
+FreeNAS on a bootlable usb stick.
+
+
+usb stick
+=========
+64GB Cruzer Fit | USB Flash Drive
+make:  Sandisk
+model: SDC233-064G-B35
+usb:   USB 2.0/3.0
+isdn:  6-19659-10151-0 
