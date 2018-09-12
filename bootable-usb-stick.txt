@@ -3,6 +3,9 @@ Created Wed Sep 12 12:56:16 AKDT 2018
 Copyright (C) 2018 by Raymond E. Marcil <marcilr@gmail.com>
 
 
+Bootable FreeNAS usb stick
+
+
 The goal for the 2x Supermicro 2U X8DTU-F is to install 
 FreeNAS on a bootlable usb stick.
 
