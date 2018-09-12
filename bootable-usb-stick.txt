@@ -26,4 +26,7 @@ FreeNAS 9.3 - ISO into a bootable USB Stick
 https://forums.freenas.org/index.php?threads/freenas-9-3-iso-into-a-bootable-usb-stick.25471/
 
 Installing and Upgrading FreeNAS
+"If you are a home user who is experimenting with FreeNAS,
+you can install FreeNAS on an inexpensive USB thumb drive
+and use the computer’s disk(s) for storage."
 https://doc.freenas.org/9.3/freenas_install.html
