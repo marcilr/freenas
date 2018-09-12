@@ -22,6 +22,9 @@ isdn:  6-19659-10151-0
 
 Links
 =====
+Downloads
+http://download.freenas.org/
+
 FreeNAS 9.3 - ISO into a bootable USB Stick
 https://forums.freenas.org/index.php?threads/freenas-9-3-iso-into-a-bootable-usb-stick.25471/
 
