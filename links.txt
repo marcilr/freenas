@@ -35,6 +35,9 @@ o IBM - SERVERAID M1015 8CHANNEL PCI-E X8 SAS/SATA
 o RaidZ2 16TB ZFS Volume
 https://toys.lerdorf.com/archives/58-Building-a-NAS.html
 
+Downloads
+http://download.freenas.org/
+
 FreeNAS
 The World's #1 Storage OS with over 9+ Million Downloads
 Enterprise-Grade Features, Open Source, BSD Licensed
