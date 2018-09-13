@@ -20,12 +20,17 @@ information.
 
 
 1. Getting FreeNAS
-   The latest STABLE version of FreeNAS 9.3 can be downloaded from:
+   The latest STABLE version of FreeNAS can be downloaded from:
      http://download.freenas.org/
 
-   $ wget https://download.freenas.org/11/latest/x64/FreeNAS-11.1-U4.iso
+   $ wget https://download.freenas.org/11/latest/x64/FreeNAS-11.1-U6.iso
+   $ wget https://download.freenas.org/11/latest/x64/FreeNAS-11.1-U6.iso.sha256
 
-   Found that FreeNAS-11.1-U4.iso is 605M - github's max is 100M.
+   Unable to fetch from freenas.org on Sepember 13, 2018.
+   Hence googled and used:
+   $ wget --no-check-certificate https://download.pcbsd.org/11/latest/x64/FreeNAS-11.1-U6.iso
+
+   Found that FreeNAS-11.1-U6.iso is 607M - github's max is 100M.
    i.e. Don't commit to github.
 
    NOTE: FreeNAS will only install to 64-bit hardware and the installer
@@ -98,10 +103,9 @@ information.
 
    Example 2.2a: Writing the .iso file to a USB Thumb Drive
 
-     dd if=FreeNAS-9.3-RELEASE-x64.iso of=/dev/da0 bs=64k
-     6117+0 records in
-     6117+0 records out
-     400883712 bytes transferred in 88.706398 secs (4519220 bytes/sec)
+     dd if=FreeNAS-11.1-U6.iso of=/dev/da0 bs=64k
+     ???
+
 
    When using the dd command:
    o if= refers to the input file, or the name of the file to write
@@ -120,12 +124,17 @@ information.
 
    See Performing the Installation at Installing and Upgrading FreeNAS
    for details:
-     https://doc.freenas.org/9.3/freenas_install.html
+     Installing and Upgrading - 11.6-U6
+     https://doc.freenas.org/11/install.html
+
 
 Links
 =====
 [1] FreeNAS Documention
 http://doc.freenas.org/
+
+FreeNAS 11.1-U6 User Guide
+https://doc.freenas.org/11/freenas.html
 
 FreeNAS Downloads
 http://download.freenas.org/
@@ -134,4 +143,5 @@ FreeNAS FAQ
 http://www.freenas.org/faq/
 
 Installing and Upgrading FreeNAS
-https://doc.freenas.org/9.3/freenas_install.html
+https://doc.freenas.org/11/install.html
+
