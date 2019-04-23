@@ -13,6 +13,7 @@ x86-64 hardware.
 --FreeNAS - Wikipedia
   https://en.wikipedia.org/wiki/FreeNAS
 
+
 FreeNAS is a Free and Open Source Network Attached Storage (NAS)
 software appliance.  This means that you can use FreeNAS to share
 data over file-based sharing protocols, including CIFS for Windows
@@ -29,7 +30,7 @@ faster.
 
 Can FreeNAS be used as a Media Server?
 ======================================
-It sure can! FreeNAS includes support for a wide variety of third-party
+It sure can!  FreeNAS includes support for a wide variety of third-party
 software plugins, including Plex Media Server.  Plex Media Server allows
 FreeNAS to stream television shows, movies, and music to a wide variety
 of devices.  If you’re concerned about system requirements, the FreeNAS
