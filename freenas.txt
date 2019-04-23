@@ -62,18 +62,6 @@ For 48TB:
 
 Links
 =====
-Crucial internal solid state drives (SSDs)
-6Gbps (SATA III)
-http://www.crucial.com/usa/en/ssd/?gclid=CjwKEAjwydK_BRDK34GenvLB61YSJACZ8da32S5BUgtBrWfQ17bJWZxe04mbJKAny5VvsgTqQJcMnBoCdQvw_wcB&cm_mmc=google-_-us-_-ssd-_-null&ef_id=UXiANQAABIMcPDn@:20161006005703:s
-
-Crucial MX200 SSD Review (500GB/1TB)
-"Based upon the rating on the MX200s' stickers, the max power consumption is
-rated for up to 8.5W. In testing we found they were able to stay well under
-this value. Max draw was under 5W.  At idle they consumed very little power
-at 60 and 65 milliwatts respectfully.  This is very good for those who plan
-on putting this SSD in a laptop, Ultrabook, or tablet."
-http://www.thessdreview.com/our-reviews/crucial-mx200-ssd-review-500gb1tb/6/
-
 FreeNAS
 The World’s #1 Storage OS with over 9+ Million Downloads
 Enterprise-Grade Features, Open Source, BSD Licensed
@@ -87,21 +75,3 @@ FreeNAS: A Worst Practices Guide
 Sep 30, 2015 | FreeNAS | 6 comments
 o Hardware raid not so good with FreeNAS
 http://www.freenas.org/blog/freenas-worst-practices/
-
-FreeNAS At Home
-http://www.freenas.org/for-home/
-
-The 'Hidden' Cost of Using ZFS for Your Home NAS
-January 02, 2016
-http://louwrentius.com/the-hidden-cost-of-using-zfs-for-your-home-nas.html#fn:san
-
-Supermicro 2U SuperChassis 216
-These 24x 2.5" SAS3/SATA hard drive chassis rock hard.
-Would need to determine the correct power rating for:
-1TB Crucial MX200 ($307.77) <=== $288 on newegg
-1TB Crucial MX300 ($249.99)
-Given the MX200's use a max of 8.5W then 
-24x8.5W = 204W
-Hence the 920W would be ample.
-https://www.supermicro.com/manuals/chassis/2U/SC216.pdf
-https://www.supermicro.com/products/chassis/2U/?chs=216
